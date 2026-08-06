@@ -1,1 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+
+/* HEADER */
+
+.header{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#111;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:white;
+    letter-spacing:2px;
+}
+
+.logo span{
+    color:#d4af37;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+
+
+/* HERO */
+
+.hero{
+
+    height:80vh;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.7),
+    rgba(0,0,0,.7)
+    ),
+    url("../img/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+
+.hero-text h1{
+
+    font-size:60px;
+    line-height:1.1;
+
+}
+
+
+.hero-text p{
+
+    margin:20px 0;
+    font-size:20px;
+
+}
+
+
+.btn{
+
+    display:inline-block;
+    padding:15px 35px;
+    background:#d4af37;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+
+}
+
+
+
+/* PRODUCTOS */
+
+.productos{
+
+    padding:70px 8%;
+
+}
+
+
+.productos h2,
+.nosotros h2,
+.contacto h2{
+
+    text-align:center;
+    font-size:35px;
+    margin-bottom:40px;
+
+}
+
+
+
+.grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+
+}
+
+
+
+.card{
+
+    background:#191919;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+
+.card img{
+
+    width:100%;
+    border-radius:15px;
+
+}
+
+
+
+.card h3{
+
+    margin:20px 0 10px;
+
+}
+
+
+.card strong{
+
+    display:block;
+    color:#d4af37;
+    font-size:22px;
+    margin:15px;
+
+}
+
+
+.card button{
+
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    background:#d4af37;
+    cursor:pointer;
+    font-weight:bold;
+
+}
+
+
+
+/* SECCIONES */
+
+.nosotros,
+.contacto{
+
+    padding:70px 8%;
+    text-align:center;
+
+}
+
+
+.whatsapp{
+
+    display:inline-block;
+    margin-top:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    text-decoration:none;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+    background:#050505;
+    padding:30px;
+    text-align:center;
+
+}
+
+
+
+/* CELULAR */
+
+@media(max-width:700px){
+
+.header{
+
+    flex-direction:column;
+
+}
+
+nav{
+
+    margin-top:15px;
+
+}
+
+.hero-text h1{
+
+    font-size:40px;
+
+}
+
+}

@@ -3,31 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CHAMORREX WEAR</title>
+<title>Producto - Chamorrex Wear</title>
+
 <style>
 body{
+    font-family: Arial, sans-serif;
     margin:0;
-    font-family:Arial,sans-serif;
     background:#111;
     color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
 }
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+    text-align:center;
+}
+
+.producto{
+    background:#1c1c1c;
+    padding:25px;
+    border-radius:15px;
+}
+
+.producto img{
+    width:300px;
+    max-width:90%;
+    border-radius:15px;
+}
+
 h1{
-    color:#ff3b3b;
+    font-size:35px;
+}
+
+.precio{
+    font-size:28px;
+    color:#f5c542;
+}
+
+button{
+    background:#25D366;
+    border:none;
+    padding:15px 25px;
+    border-radius:30px;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+}
+
+.volver{
+    display:block;
+    margin-top:25px;
 }
 </style>
+
 </head>
+
 <body>
 
-<div>
-<h1>CHAMORREX WEAR</h1>
-<p>¡Tu tienda ya está publicada en GitHub Pages!</p>
+<div class="container">
+
+<div class="producto">
+
+<img src="img/collar1.jpg" alt="Collar Chamorrex">
+
+<h1>Collar Chamorrex Premium</h1>
+
+<p class="precio">S/ 49.90</p>
+
+<p>
+Collar urbano de diseño exclusivo.
+Material resistente, estilo moderno
+y pensado para complementar tu outfit.
+</p>
+
+<a href="https://wa.me/519XXXXXXXX">
+<button>
+Comprar por WhatsApp
+</button>
+</a>
+
+<a class="volver" href="index.html">
+← Volver a la tienda
+</a>
+
+</div>
+
 </div>
 
 </body>
 </html>
-
 

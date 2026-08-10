@@ -1,228 +1,458 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamorrex Wear | Accesorios para ti y tu mascota</title>
 
-<title>Chamorrex Wear | Estilo para ti y tu mascota</title>
+    <meta name="description"
+        content="Chamorrex Wear - Accesorios y productos seleccionados para ti y tu mascota. Envíos en Lima, Perú.">
 
-<link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header class="header">
+    <!-- HEADER -->
+    <header class="header">
 
-<div class="logo">
-CHAMORREX <span>WEAR</span>
-</div>
+        <div class="logo">
+            <a href="#inicio">CHAMORREX <span>WEAR</span></a>
+        </div>
 
-<nav>
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#mascotas">Mascotas</a>
+            <a href="#humanos">Accesorios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
 
-<a href="#">Inicio</a>
-<a href="#mascotas">Mascotas</a>
-<a href="#humanos">Humanos</a>
-<a href="#contacto">Contacto</a>
+    </header>
 
-</nav>
 
-</header>
+    <!-- INICIO -->
+    <main>
 
+        <section class="hero" id="inicio">
 
-<section class="hero">
+            <div class="hero-content">
 
-<div class="hero-text">
+                <p class="hero-subtitle">
+                    ESTILO • PERSONALIDAD • DETALLE
+                </p>
 
-<h1>
-UN ESTILO<br>
-QUE NOS UNE
-</h1>
+                <h1>
+                    CHAMORREX<br>
+                    <span>WEAR</span>
+                </h1>
 
-<p>
-Accesorios premium para ti y tu compañero.
-Diseños únicos para personas y mascotas.
-</p>
+                <p>
+                    Accesorios seleccionados para darle personalidad
+                    a tu estilo y a tu mascota.
+                </p>
 
-<a href="#categorias" class="btn">
-Ver colección
-</a>
+                <a href="#humanos" class="btn">
+                    VER PRODUCTOS
+                </a>
 
-</div>
+            </div>
 
-</section>
+        </section>
 
 
-<section id="categorias" class="productos">
+        <!-- MASCOTAS -->
+        <section class="products-section" id="mascotas">
 
-<h2>
-Nuestras colecciones
-</h2>
+            <div class="section-title">
 
-<div class="grid">
+                <p>PARA TU COMPAÑERO</p>
 
-<div class="card">
+                <h2>
+                    ACCESORIOS <span>GOLDEN</span>
+                </h2>
 
-<h3>
-🐶 Colección Mascotas
-</h3>
+                <div class="line"></div>
 
-<p>
-Collares y accesorios premium para perros y gatos.
-</p>
+            </div>
 
-<a href="#mascotas">
-<button>
-Ver productos
-</button>
-</a>
 
-</div>
+            <div class="products-grid">
 
 
-<div class="card">
+                <!-- GOLDEN COLLAR -->
+                <article class="product-card">
 
-<h3>
-✨ Colección Humana
-</h3>
+                    <div class="product-image">
+                        <img
+                            src="img/golden-collar.jpg"
+                            alt="Golden Collar">
+                    </div>
 
-<p>
-Collares urbanos y accesorios con personalidad.
-</p>
+                    <div class="product-info">
 
-<a href="#humanos">
-<button>
-Ver productos
-</button>
-</a>
+                        <span class="product-category">
+                            GOLDEN
+                        </span>
 
-</div>
+                        <h3>
+                            Golden Collar
+                        </h3>
 
-</div>
+                        <p>
+                            Collar para mascota disponible
+                            hasta talla S y M.
+                        </p>
 
-</section>
+                        <strong>
+                            S/ 39.90
+                        </strong>
 
+                        <button
+                            class="buy-btn"
+                            onclick="comprarProducto('Golden Collar - S/ 39.90')">
+                            COMPRAR
+                        </button>
 
-<section id="mascotas" class="productos">
+                    </div>
 
-<h2>
-🐾 Accesorios Golden
-</h2>
+                </article>
 
-<div class="grid">
 
+                <!-- GOLDEN PENDANT -->
+                <article class="product-card">
 
-<!-- COLLAR GOLDEN -->
+                    <div class="product-image">
+                        <img
+                            src="img/golden-pendant.jpg"
+                            alt="Golden Pendant">
+                    </div>
 
-<div class="card">
+                    <div class="product-info">
 
-<img src="img/img/mascotas/Captura de pantalla 2026-08-10 154703 E.png">
+                        <span class="product-category">
+                            GOLDEN
+                        </span>
 
-<h3>
-Collar Golden
-</h3>
+                        <h3>
+                            Golden Pendant
+                        </h3>
 
-<strong>
-S/ 39.90
-</strong>
+                        <p>
+                            Un detalle especial para
+                            complementar el estilo de tu mascota.
+                        </p>
 
-<button>
-Comprar
-</button>
+                        <strong>
+                            S/ 29.90
+                        </strong>
 
-</div>
+                        <button
+                            class="buy-btn"
+                            onclick="comprarProducto('Golden Pendant - S/ 29.90')">
+                            COMPRAR
+                        </button>
 
+                    </div>
 
-<!-- COLGANTE GOLDEN -->
+                </article>
 
-<div class="card">
 
-<img src="img/img/mascotas/Captura de pantalla 2026-08-10 152737.png">
+            </div>
 
-<h3>
-Colgante Golden
-</h3>
+        </section>
 
-<strong>
-S/ 29.90
-</strong>
 
-<button>
-Comprar
-</button>
 
-</div>
+        <!-- ACCESORIOS HUMANOS -->
+        <section class="products-section" id="humanos">
 
+            <div class="section-title">
 
-</div>
+                <p>PARA TI</p>
 
-</section>
+                <h2>
+                    ACCESORIOS <span>WEAR</span>
+                </h2>
 
+                <div class="line"></div>
 
-<section id="humanos" class="productos">
+            </div>
 
-<h2>
-💎 Accesorios humanos
-</h2>
 
-<div class="grid">
+            <div class="products-grid">
 
-<div class="card">
 
-<img src="img/humanos/collar1.jpg">
+                <!-- COLGANTES -->
+                <article class="product-card">
 
-<h3>
-Urban Black
-</h3>
+                    <div class="product-image">
+                        <img
+                            src="img/colgantes-chakra.jpg"
+                            alt="Set de 50 Colgantes de Chakra">
+                    </div>
 
-<strong>
-S/ 49.90
-</strong>
+                    <div class="product-info">
 
-<button>
-Comprar
-</button>
+                        <span class="product-category">
+                            ACCESORIOS
+                        </span>
 
-</div>
+                        <h3>
+                            Set de 50 Colgantes de Chakra
+                        </h3>
 
-</div>
+                        <p>
+                            Set de accesorios para complementar
+                            diferentes estilos.
+                        </p>
 
-</section>
+                        <strong>
+                            S/ 20.00
+                        </strong>
 
+                        <button
+                            class="buy-btn"
+                            onclick="comprarProducto('Set de 50 Colgantes de Chakra - S/ 20.00')">
+                            COMPRAR
+                        </button>
 
-<section id="contacto" class="contacto">
+                    </div>
 
-<h2>
-¿Quieres un diseño personalizado?
-</h2>
+                </article>
 
-<a class="whatsapp" href="#">
-Comprar por WhatsApp
-</a>
 
-</section>
 
+                <!-- LLAVEROS -->
+                <article class="product-card">
 
-<footer>
+                    <div class="product-image">
+                        <img
+                            src="img/llaveros.jpg"
+                            alt="Set de 10 Llaveros">
+                    </div>
 
-<p>
-© 2026 Chamorrex Wear
-</p>
+                    <div class="product-info">
 
-<p>
-🐾 Accesorios para personas y mascotas
-</p>
+                        <span class="product-category">
+                            ACCESORIOS
+                        </span>
 
-</footer>
+                        <h3>
+                            Set de 10 Llaveros
+                        </h3>
 
+                        <p>
+                            Llaveros prácticos para llevar
+                            contigo todos los días.
+                        </p>
 
-<script src="js/script.js"></script>
+                        <strong>
+                            S/ 49.90
+                        </strong>
+
+                        <button
+                            class="buy-btn"
+                            onclick="comprarProducto('Set de 10 Llaveros - S/ 49.90')">
+                            COMPRAR
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PULSERAS / ANILLOS -->
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="img/pulseras-anillos.jpg"
+                            alt="20 Pulseras y Anillos Adhesivos">
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            ACCESORIOS
+                        </span>
+
+                        <h3>
+                            20 Pulseras / Anillos Adhesivos
+                        </h3>
+
+                        <p>
+                            Accesorios ideales para darle
+                            un toque diferente a tu estilo.
+                        </p>
+
+                        <strong>
+                            S/ 39.90
+                        </strong>
+
+                        <button
+                            class="buy-btn"
+                            onclick="comprarProducto('20 Pulseras / Anillos Adhesivos - S/ 39.90')">
+                            COMPRAR
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- INFORMACIÓN -->
+        <section class="info-section">
+
+            <div class="info-box">
+
+                <h3>
+                    ENVÍOS
+                </h3>
+
+                <p>
+                    Realizamos envíos en Lima, Perú.
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>
+                    PEDIDOS
+                </h3>
+
+                <p>
+                    Realiza tu pedido directamente
+                    por WhatsApp.
+                </p>
+
+            </div>
+
+
+            <div class="info-box">
+
+                <h3>
+                    CHAMORREX
+                </h3>
+
+                <p>
+                    Accesorios seleccionados para
+                    personas y mascotas.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CONTACTO -->
+        <section class="contact-section" id="contacto">
+
+            <div class="section-title">
+
+                <p>¿TIENES ALGUNA CONSULTA?</p>
+
+                <h2>
+                    HABLEMOS
+                </h2>
+
+                <div class="line"></div>
+
+            </div>
+
+            <p>
+                Escríbenos por WhatsApp para consultar
+                disponibilidad, realizar tu pedido
+                o solicitar información.
+            </p>
+
+            <a
+                href="https://wa.me/51955331479?text=Hola%20Chamorrex%20Wear%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20productos."
+                target="_blank"
+                class="whatsapp-btn">
+
+                ESCRIBIR POR WHATSAPP
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-logo">
+            CHAMORREX <span>WEAR</span>
+        </div>
+
+        <p>
+            Accesorios con personalidad.
+        </p>
+
+        <p class="copyright">
+            © 2026 Chamorrex Wear. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a
+        href="https://wa.me/51955331479?text=Hola%20Chamorrex%20Wear%2C%20quiero%20hacer%20un%20pedido."
+        target="_blank"
+        class="whatsapp-float"
+        aria-label="Contactar por WhatsApp">
+
+        WhatsApp
+
+    </a>
+
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function comprarProducto(producto) {
+
+            const mensaje =
+                "Hola Chamorrex Wear 👋%0A%0A" +
+                "Quiero comprar:%0A" +
+                producto +
+                "%0A%0A" +
+                "¿Me pueden confirmar disponibilidad y envío?";
+
+            const numero = "51955331479";
+
+            const url =
+                "https://wa.me/" +
+                numero +
+                "?text=" +
+                mensaje;
+
+            window.open(url, "_blank");
+
+        }
+
+    </script>
+
 
 </body>
 
 </html>
-```
+
 

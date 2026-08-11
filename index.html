@@ -3,99 +3,190 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Producto - Chamorrex Wear</title>
 
-<style>
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#111;
-    color:white;
-}
+<title>Chamorrex Wear | Collares Premium</title>
 
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:30px;
-    text-align:center;
-}
-
-.producto{
-    background:#1c1c1c;
-    padding:25px;
-    border-radius:15px;
-}
-
-.producto img{
-    width:300px;
-    max-width:90%;
-    border-radius:15px;
-}
-
-h1{
-    font-size:35px;
-}
-
-.precio{
-    font-size:28px;
-    color:#f5c542;
-}
-
-button{
-    background:#25D366;
-    border:none;
-    padding:15px 25px;
-    border-radius:30px;
-    color:white;
-    font-size:18px;
-    cursor:pointer;
-}
-
-a{
-    color:white;
-    text-decoration:none;
-}
-
-.volver{
-    display:block;
-    margin-top:25px;
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-<div class="container">
+<header class="header">
 
-<div class="producto">
+<div class="logo">
+CHAMORREX <span>WEAR</span>
+</div>
 
-<img src="img/collar1.jpg" alt="Collar Chamorrex">
+<nav>
+<a href="#">Inicio</a>
+<a href="#productos">Productos</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#contacto">Contacto</a>
+</nav>
 
-<h1>Collar Chamorrex Premium</h1>
+</header>
 
-<p class="precio">S/ 49.90</p>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>
+TU ESTILO,<br>
+TU IDENTIDAD
+</h1>
 
 <p>
-Collar urbano de diseño exclusivo.
-Material resistente, estilo moderno
-y pensado para complementar tu outfit.
+Collares premium diseñados para personas que buscan algo diferente.
 </p>
 
-<a href="https://wa.me/519XXXXXXXX">
+<a href="#productos" class="btn">
+Ver colección
+</a>
+
+</div>
+
+</section>
+
+
+
+<section id="productos" class="productos">
+
+<h2>
+Productos destacados
+</h2>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<div class="imagen">
+<img src="img/collar1.jpg" alt="Collar Chamorrex">
+</div>
+
+<h3>
+Collar Black Edition
+</h3>
+
+<p>
+Diseño urbano premium
+</p>
+
+<strong>
+S/ 49.90
+</strong>
+
 <button>
-Comprar por WhatsApp
+Comprar
 </button>
-</a>
-
-<a class="volver" href="index.html">
-← Volver a la tienda
-</a>
 
 </div>
 
+
+
+<div class="card">
+
+<div class="imagen">
+<img src="img/collar2.jpg" alt="Collar Chamorrex">
 </div>
+
+<h3>
+Collar Silver Style
+</h3>
+
+<p>
+Elegancia y personalidad
+</p>
+
+<strong>
+S/ 59.90
+</strong>
+
+<button>
+Comprar
+</button>
+
+</div>
+
+
+
+<div class="card">
+
+<div class="imagen">
+<img src="img/collar3.jpg" alt="Collar Chamorrex">
+</div>
+
+<h3>
+Collar Gold Premium
+</h3>
+
+<p>
+Edición exclusiva
+</p>
+
+<strong>
+S/ 69.90
+</strong>
+
+<button>
+Comprar
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<section id="nosotros" class="nosotros">
+
+<h2>
+¿Por qué Chamorrex Wear?
+</h2>
+
+<p>
+Creamos accesorios con diseño, calidad y una identidad propia.
+Nuestra inspiración viene del estilo urbano moderno.
+</p>
+
+</section>
+
+
+
+<section id="contacto" class="contacto">
+
+<h2>
+¿Listo para tu nuevo estilo?
+</h2>
+
+<a class="whatsapp" href="#">
+Comprar por WhatsApp
+</a>
+
+</section>
+
+
+
+<footer>
+
+<p>
+© 2026 Chamorrex Wear
+</p>
+
+<p>
+Instagram | TikTok | WhatsApp
+</p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
-
